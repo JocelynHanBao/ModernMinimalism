@@ -1,0 +1,53 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+article {
+  box-sizing: border-box;
+}
+article > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+article > div > img {
+  width: calc(33.33% - 8px);
+  margin: 0 14px 14px 0;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
+article .article-center {
+  justify-content: center;
+}
+article .article-center > img {
+  margin: 0 0 0 14px;
+}
+article > p {
+  margin-top: 42px;
+  text-align: right;
+}
+article > p > span {
+  display: inline-block;
+  width: 66%;
+  height: 47px;
+  background: #ECEBE7;
+  border-radius: 50px 0 0 50px;
+}
+@media only screen and (max-width: 768px) {
+  article {
+    width: calc(100% - 44px) !important;
+    margin: 22px !important;
+  }
+  article > div {
+    display: flex;
+  }
+  article > div > img {
+    width: 100%;
+    margin: 0 0 28px 0;
+  }
+  article .article-center > img {
+    margin: 0 0 28px 0;
+  }
+  article > p {
+    display: none;
+  }
+}

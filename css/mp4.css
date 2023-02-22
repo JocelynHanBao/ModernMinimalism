@@ -1,0 +1,21 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.img {
+  box-sizing: border-box;
+  height: 720px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  margin: 0 auto 42px !important;
+  object-fit: cover;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .img {
+    width: calc(100% - 44px) !important;
+    margin: 22px !important;
+    height: auto;
+    object-fit: contain;
+  }
+}

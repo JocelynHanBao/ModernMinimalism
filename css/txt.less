@@ -1,0 +1,221 @@
+.scroll-hide {
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+}
+article {
+  text-align: right;
+
+  .article-top {
+    display: inline-block;
+    width: 680px;
+    background: #ecebe7;
+    border-radius: 50px;
+
+    > div {
+      width: 554px;
+      height: 100px;
+      background: #000000;
+      border: 1px solid #000000;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: #ecebe7;
+      margin: 34px;
+      text-align: left;
+    }
+
+    > P {
+      box-sizing: border-box;
+      height: 1000px;
+      overflow-y: auto;
+      .scroll-hide;
+      margin: 0 74px 34px;
+      font-size: 22px;
+      line-height: 26px;
+      color: #000000;
+      text-align: left;
+      word-break: break-word;
+    }
+  }
+
+  .article-cen {
+    box-sizing: border-box;
+    border: 5px solid #ecebe7;
+    border-radius: 50px;
+    margin-top: 42px;
+
+    > div {
+      width: 738px;
+      height: 100px;
+      background: #ecebe7;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: #000;
+      margin: 34px;
+      text-align: left;
+    }
+
+    > P {
+      box-sizing: border-box;
+      height: 380px;
+      overflow-y: auto;
+      .scroll-hide;
+      margin: 0 74px 34px;
+      font-size: 22px;
+      line-height: 26px;
+      color: #ecebe7;
+      text-align: left;
+      word-break: break-word;
+    }
+  }
+
+  .article-bot {
+    box-sizing: border-box;
+    margin-top: 42px;
+    display: flex;
+
+    > div {
+      width: 865px;
+      background: #ecebe7;
+      border-radius: 50px;
+
+      div {
+        width: 586px;
+        background: #000;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        line-height: 46px;
+        color: #ecebe7;
+        margin: 34px;
+        text-align: center;
+      }
+
+      > P {
+        box-sizing: border-box;
+        height: 716px;
+        overflow-y: auto;
+        .scroll-hide;
+        margin: 0 74px 34px;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000;
+        text-align: left;
+        word-break: break-word;
+      }
+    }
+
+    > span {
+      display: block;
+      width: 48px;
+      height: 534px;
+      background: #ecebe7;
+      border-radius: 50px;
+      margin-left: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    height: 198px !important;
+  }
+
+  article {
+    width: calc(100% - 44px) !important;
+    margin: 22px !important;
+    text-align: left;
+    word-break: break-word;
+
+    .article-top {
+      display: block;
+      width: 100%;
+      background: #ecebe7;
+      border-radius: 50px;
+      overflow: hidden;
+
+      > div {
+        width: calc(100% - 36px);
+        height: 88px;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 18px;
+        text-align: center;
+      }
+
+      > P {
+        width: calc(100% - 64px);
+        margin: 0 32px 18px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 360px;
+      }
+    }
+
+    .article-cen {
+      box-sizing: border-box;
+      border: 5px solid #ecebe7;
+      border-radius: 50px;
+      margin-top: 18px;
+
+      > div {
+        width: calc(100% - 36px);
+        height: 88px;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 18px;
+        text-align: center;
+      }
+
+      > P {
+        width: calc(100% - 64px);
+        margin: 0 32px 18px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 360px;
+      }
+    }
+
+    .article-bot {
+      box-sizing: border-box;
+      margin-top: 18px;
+      display: flex;
+
+      > div {
+        width: 100%;
+        background: #ecebe7;
+        border-radius: 50px;
+
+        div {
+          width: calc(100% - 36px);
+          height: 88px;
+          font-size: 24px;
+          line-height: 28px;
+          margin: 18px;
+          text-align: center;
+        }
+
+        > P {
+          width: calc(100% - 64px);
+          margin: 0 32px 18px;
+          font-size: 18px;
+          line-height: 22px;
+          height: 360px;
+        }
+      }
+
+      > span {
+        display: none;
+      }
+    }
+  }
+}
