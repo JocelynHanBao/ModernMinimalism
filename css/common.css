@@ -4,16 +4,15 @@ p {
   margin: 0;
 }
 @font-face {
-  font-family: 'Helvetica';
-  src: url("../font/Helvetica.otf");
+  font-family: Helvetica, sans-serif;
 }
 html,
 body {
   width: 100%;
 }
 body {
-  background: #1E1E1E;
-  font-family: 'Helvetica', sans-serif;
+  background: #1e1e1e;
+  font-family: Helvetica, sans-serif;
 }
 p,
 a {
@@ -55,13 +54,13 @@ header > div {
 header .header-long {
   width: 228px;
   height: 48px;
-  background: #ECEBE7;
+  background: #ecebe7;
   border-radius: 50px;
 }
 header .header-circle {
   width: 48px;
   height: 48px;
-  background: #ECEBE7;
+  background: #ecebe7;
   border-radius: 50px;
   margin-left: 28px;
 }
@@ -69,7 +68,7 @@ nav {
   position: relative;
   box-sizing: border-box;
   height: 318px;
-  background: #ECEBE7;
+  background: #ecebe7;
   border-radius: 50px;
   margin: 42px auto;
   padding: 0 62px;
@@ -92,7 +91,7 @@ nav > a {
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  color: #ECEBE7 !important;
+  color: #ecebe7 !important;
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -101,7 +100,7 @@ nav > a {
   nav {
     width: calc(100% - 44px) !important;
     height: 342px;
-    background: #ECEBE7;
+    background: #ecebe7;
     border-radius: 50px;
     margin: 22px !important;
     padding: 22px;
