@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
     <title>mp4</title>
     <!--css-->
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/mp4.css">
-</head>
-<body>
-<header class="main">
-    <div>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/mp4.css" />
+    <script defer src="arena.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- Replace this URL with your channel to connect the API! -->
+    <a
+      href="https://www.are.na/vasu-mohan-eere-fvp4ca/modern-minimalism"
+      id="channel-url"
+    >
+      <!-- The channel title will be inserted inside this h1. -->
+    </a>
+
+    <header class="main">
+      <div>
         <div class="header-long"></div>
         <div class="header-circle"></div>
-    </div>
-    <div>
+      </div>
+      <div>
         <div class="header-circle"></div>
         <div class="header-circle"></div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<nav class="main">
-    <p>.mp4</p>
-    <a href="./index.html">home</a>
-</nav>
+    <nav class="main">
+      <p>.mp4</p>
+      <a href="./index.html">home</a>
+    </nav>
 
-<img class="main img" src="./img/7.jpeg" alt="">
-<img class="main img" src="./img/7.jpeg" alt="">
-<img class="main img" src="./img/7.jpeg" alt="">
+    <section>
+      <ul class="video-embed-blocks"></ul>
+    </section>
+  </body>
 
-</body>
+  <!-- YouTube, Vimeo, etc. -->
+  <template id="video-embed-block">
+    <li>
+      <figure class="video-embed-block">
+        <h3 class="title"></h3>
+        <div class="embed"></div>
+        <a class="link">
+          <p class="link-title"></p>
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
 </html>

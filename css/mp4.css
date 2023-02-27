@@ -19,3 +19,13 @@
     object-fit: contain;
   }
 }
+
+.video-embed-block {
+  box-sizing: border-box;
+  height: 720px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  margin: 0 auto 42px !important;
+  object-fit: cover;
+  overflow: hidden;
+}
